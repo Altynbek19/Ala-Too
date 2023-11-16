@@ -1,0 +1,88 @@
+.specialists>h1{
+    color: #9C87EF;
+    font-weight: 450;
+}
+.specialists{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center ;
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+    margin-bottom: 255px;
+    font-size: 15px;
+}
+.spec-part1{
+    display: flex;
+    justify-content: space-around;
+}
+.spec-part2{
+    display: flex;
+    justify-content: space-around;
+}
+.specialist{
+    width: 22%;
+    height: 255px;
+    background: #9C87EF;
+    padding: 20px;
+    border-radius: 23px;
+}
+.specialist-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+.specialist-content{
+    color: #fff;
+}
+
+@media screen and (max-width: 1050px) {
+    .specialist{
+        font-size: 12px;
+        height: 210px;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .specialist{
+        font-size: 8px;
+        height: 150px;
+        padding: 10px;
+    }
+    .specialists{
+        margin-bottom: 150px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .specialist{
+        font-size: 7px;
+        height: 120px;
+    }
+    .specialists>h1{
+        font-size: 20px;
+    }
+    .specialist-header img{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .specialist{
+        font-size: 6px;
+        height: 105px;
+        border-radius: 7px;
+    }
+    .specialist-header img{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .specialist{
+        padding: 8px;
+    }
+}

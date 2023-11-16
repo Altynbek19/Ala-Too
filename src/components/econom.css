@@ -1,0 +1,17 @@
+
+.econom_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #666666;
+}
+.econom_text_2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.econom_title{
+    font-size: 36px;
+    color: #9C87EF;
+}

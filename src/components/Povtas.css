@@ -1,0 +1,139 @@
+.povtas_title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 36px;
+
+}
+.povtas_box{
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1400px) {
+    .econom_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #666666;
+        gap: 20px;
+    }
+    .econom_title{
+        font-size: 30px;
+        color: #9C87EF;
+    }
+
+}
+@media screen and (max-width: 1300px) {
+    .computer_text_img img{
+        width: 400px;
+    }
+    .econom_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #666666;
+        gap: 10px;
+    }
+    .econom_title{
+        font-size: 20px;
+        color: #9C87EF;
+    }
+
+}
+@media screen and (max-width: 1220px) {
+    .h_sign, .h_sign_2{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .computer{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .h_sign, .h_sign_2{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .computer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .computer_main_title{
+        font-size: 25px;
+    }
+    .povtas_title, .computer_title{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    /* .computer_text{
+        font-size: 10px;
+    }
+    .computer_text_img img{
+        width: 300px;
+    }
+    .last_computer_text{
+        font-size: 10px;
+    } */
+    .computer_text_img{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .computer_text_img img{
+        width: 100%;
+        height: auto;
+    }
+    .computer_text{
+        font-size: 11px;
+    }
+    .econom_text{
+        font-size: 11px;
+    }
+    .last_computer_text{
+        font-size: 7px;
+    }
+    .computer_title{
+        font-size: 17px;
+    }
+    .computer_main_title{
+        font-size: 20px;
+    }
+    .computer{
+        margin-top: 70px;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .last_computer_text{
+        font-size: 5px;
+    }
+    .computer_title{
+        font-size: 15px;
+    }
+    .computer_main_title{
+        font-size: 17px;
+    }
+    .computer{
+        margin-top: 70px;
+        padding-bottom: 50px;
+    }
+    .computer_text_img{
+        gap: 40px;
+    }
+    .computer_boxes{
+        gap: 20px;
+    }
+
+}

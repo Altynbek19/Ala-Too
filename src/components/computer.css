@@ -1,0 +1,46 @@
+.computer_container{
+    background: url(../assets/computer_back.png);
+    background-size: cover;
+    color: #9C87EF;
+}
+.computer{
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 110px;
+    padding-bottom: 78px;
+}
+.computer_main_title{
+    font-size: 40px;
+    color: #716BB8;
+}
+.computer_boxes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 66px;
+    gap: 96px;
+}
+.computer_box{
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+    align-items: center;
+}
+.computer_text_img{
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    width: 100%;
+}
+.computer_title{
+    font-size: 36px;
+}
+.computer_text{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #666666;
+}
+.last_computer_text{
+    font-size: 17px;
+    color: #666666;
+}

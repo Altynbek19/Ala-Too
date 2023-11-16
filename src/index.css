@@ -1,0 +1,9 @@
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+button{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}

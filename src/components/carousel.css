@@ -1,0 +1,79 @@
+/* Стили для контейнера карусели */
+.carousel_container{
+  padding-bottom: 450px;
+}
+.carousel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-bottom: 450px; */
+}
+
+.carousel-title{
+  color: #9C87EF;
+  font-weight: 450;
+}
+.carousel-container {
+  /* display: flex;
+    width: 100%; */
+    max-width: 600px; /* Установите максимальную ширину карусели по вашему усмотрению */
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 100px;
+  }
+  /* .carousel-slide{
+    width: 200px !important;
+  } */
+
+  ul.thumbs{
+    display: none;
+  }
+  
+  .slide{
+    display: flex;
+    max-width: 100px !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Стили для слайдов внутри карусели */
+  .carousel-slide {
+    text-align: center; /* Центрируем содержимое слайдов */
+  }
+  
+  /* Стили для изображений в слайде */
+  .carousel-slide img {
+    width: 100px; /* Изображение будет масштабироваться так, чтобы поместиться в слайд */
+    height: auto;
+  }  
+
+.carousel .control-dots .dot{
+  background: #9C87EF;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel_container{
+    padding-bottom: 350px;
+  }
+  .carousel-root{
+    width: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .carousel_container{
+    padding-bottom: 200px;
+  }
+  .carousel-root{
+    width: 260px;
+  }
+  .carousel .carousel-dots{
+    height: 15px;
+  }
+  .dot{
+    width: 5px;
+    height: 5px;
+  }
+  .carousel-title{
+    font-size: 22px;
+  }
+}

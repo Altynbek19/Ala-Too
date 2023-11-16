@@ -1,0 +1,115 @@
+.footer{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 400px;
+    justify-content: center;
+    /* padding-bottom: 100px; */
+    /* margin-top: 450px; */
+    background: url(../assets/footer_back.png) no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+}
+.f_image{
+    display: flex;
+    gap: 30px;
+    width: 70%;
+}
+.f_image img{
+    width: 32px;
+    height: 22px;
+}
+.f_content_container{
+    display: flex;
+    width: 70%;
+    gap: 100px;
+}
+.f_contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.f_email{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.f_info{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.f_contact_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.f_contact_container img{
+    width: 31px;
+    height: 34px;
+}
+.f_number{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.f_college, .f_students{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer{
+        font-size: 10px;
+    }
+    .f_contact_container img{
+        width: 26px;
+        height: 29px;
+    }
+    .f_image img{
+        width: 27px;
+        height: 17px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .footer{
+        font-size: 10px;
+    }
+    .f_contact_container img{
+        width: 23px;
+        height: 23px;
+    }
+    .f_image img{
+        width: 20px;
+        height: 20px;
+    }
+    .f_content_container{
+        display: flex;
+        width: 80%;
+        gap: 80px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .footer{
+        font-size: 8px;
+    }
+    .f_contact_container img{
+        width: 23px;
+        height: 23px;
+    }
+    .f_image img{
+        width: 20px;
+        height: 20px;
+    }
+    .f_image{
+        margin-right: 50px;
+    }
+    .f_content_container{
+        display: flex;
+        width: 85%;
+        gap: 60px;
+    }
+}

@@ -1,0 +1,40 @@
+.h_sign_2{
+    display: flex;
+    border-top: #9C87EF solid ;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 59px;
+    padding-top: 35px;
+}
+
+.search_2{
+    display: flex;
+    align-items: center;
+}
+.search_2 input{
+    /* border: none; */
+    background: none;
+    border-top: rgb(0, 0, 0) 1px;
+    border-left: rgb(0, 0, 0) 1px;
+    border-right: rgb(0, 0, 0) 1px;
+    width: 152px;
+    height: 28px;
+    padding-left: 5px;
+    color: #9C87EF;
+}
+.search img{
+    height: 28px;
+}
+.sign_button_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9C87EF;
+    color: white;
+    height: 31px;
+    width: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+}
