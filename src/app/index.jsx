@@ -8,6 +8,7 @@ import Marketing from "../components/Marketing.jsx"
 import Povtas from "../components/Povtas"
 import Welcome from "../components/Welcome.jsx"
 import Carousel from "../components/carousel.jsx"
+import Authorization from "../components/Authorization.jsx"
 const path = (import.meta.env.PROD)? '/project' : ''
   
 const router = createBrowserRouter([
@@ -65,6 +66,14 @@ const router = createBrowserRouter([
         <Header />
         <Marketing />
         <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/authorization`,
+    element: (
+      <div>
+        <Authorization />
       </div>
     )
   },
