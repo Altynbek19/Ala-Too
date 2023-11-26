@@ -15,7 +15,7 @@
 .f_image{
     display: flex;
     gap: 30px;
-    width: 70%;
+    width: 50%;
 }
 .f_image img{
     width: 32px;
@@ -23,7 +23,7 @@
 }
 .f_content_container{
     display: flex;
-    width: 70%;
+    width: 50%;
     gap: 100px;
 }
 .f_contact{
@@ -61,7 +61,7 @@
     gap: 10px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .footer{
         font-size: 10px;
     }
@@ -72,6 +72,27 @@
     .f_image img{
         width: 27px;
         height: 17px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .footer{
+        font-size: 10px;
+    }
+    .f_contact_container img{
+        width: 23px;
+        height: 23px;
+    }
+    .f_image img{
+        width: 20px;
+        height: 20px;
+    }
+    .f_content_container{
+        display: flex;
+        width: 55%;
+        gap: 80px;
+    }
+    .f_image{
+        width: 55%;
     }
 }
 @media screen and (max-width: 700px) {
@@ -88,8 +109,11 @@
     }
     .f_content_container{
         display: flex;
-        width: 80%;
+        width: 70%;
         gap: 80px;
+    }
+    .f_image{
+        width: 70%;
     }
 }
 @media screen and (max-width: 570px) {
@@ -105,11 +129,32 @@
         height: 20px;
     }
     .f_image{
-        margin-right: 50px;
+        width: 70%;
     }
     .f_content_container{
         display: flex;
-        width: 85%;
+        width: 70%;
+        gap: 60px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .footer{
+        font-size: 8px;
+    }
+    .f_contact_container img{
+        width: 23px;
+        height: 23px;
+    }
+    .f_image img{
+        width: 20px;
+        height: 20px;
+    }
+    .f_image{
+        width: 80%;
+    }
+    .f_content_container{
+        display: flex;
+        width: 80%;
         gap: 60px;
     }
 }

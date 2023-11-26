@@ -15,12 +15,6 @@ export default function Header() {
     
                 </Link>
                 <div className="header-buttons">
-                    {/* <Link to='/marketing'>
-                        <div className="header-button">
-                            КОЛЛЕДЖ
-                        </div>
-                    </Link>
-                     */}
                     <div className="header-button-container">
                             <div className="header-button">
                                 КОЛЛЕДЖ
@@ -31,9 +25,6 @@ export default function Header() {
                             <a href="#">Проверка диплома</a>
                         </div>
                     </div>
-                    {/* <Link to="/computer"><div className="header-button">
-                    ПРОФЕССИИ
-                    </div></Link> */}
                     <div className="header-button-container">
                         <Link to="/computer">
                             <div className="header-button">
