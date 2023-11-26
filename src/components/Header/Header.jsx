@@ -15,27 +15,70 @@ export default function Header() {
     
                 </Link>
                 <div className="header-buttons">
-                    <Link to='/marketing'>
+                    {/* <Link to='/marketing'>
                         <div className="header-button">
                             КОЛЛЕДЖ
                         </div>
                     </Link>
-                    <Link to="/computer"><div className="header-button">
+                     */}
+                    <div className="header-button-container">
+                            <div className="header-button">
+                                КОЛЛЕДЖ
+                            </div>
+                        <div className="dropdown-content">
+                            <a href="#">О колледже</a>
+                            <a href="#">Миссия</a>
+                            <a href="#">Проверка диплома</a>
+                        </div>
+                    </div>
+                    {/* <Link to="/computer"><div className="header-button">
                     ПРОФЕССИИ
-                    </div></Link>
-                    
-                    <Link to='/povtas'>
-                        <div className="header-button">
-                        СТУДЕНЧЕСКИЕ КЛУБЫ
+                    </div></Link> */}
+                    <div className="header-button-container">
+                        <Link to="/computer">
+                            <div className="header-button">
+                                ПРОФЕССИИ
+                            </div>
+                        </Link>
+                        <div className="dropdown-content">
+                            <Link to='/povtas'>Компьютерные системы и комплексы</Link>
+                            <Link to='/econom'>Экономика и бухгалтерский отчет</Link>
+                            <Link to='/marketing'>Маркетинг</Link>
+                            <Link to="/computer">Программное обеспечение вычислительной техники</Link>
+                            <Link to='/design'>Дизайн</Link>
                         </div>
-                    </Link>
-                    <Link to='/econom'>
-                        <div className="header-button">
-                        СТУДЕНТ
+                    </div>
+                    <div className="header-button-container">
+                            <div className="header-button">
+                            СТУДЕНТ
+                            </div>
+                        <div className="dropdown-content">
+                            <a href="#">Формы</a>
+                            <a href="#">Мидтерм экзамены</a>
+                            <a href="#">Финальные экзамены</a>
+                            <a href="#">Пересдача</a>
                         </div>
-                    </Link>
-                    <div className="header-button">
-                    ПОСТУПАЮЩИМ
+                    </div>
+                    <div className="header-button-container">
+                            <div className="header-button">
+                            СТУДЕНЧЕСКИЕ КЛУБЫ
+                            </div>
+                        <div className="dropdown-content">
+                            <a href="#">Студенческий совет</a>
+                            <a href="#">V-Fund</a>
+                            <a href="#">Alatoo - dance</a>
+                            <a href="#">Music club</a>
+                            <a href="#">Спортивный клуб</a>
+                        </div>
+                    </div>
+                    <div className="header-button-container">
+                            <div className="header-button">
+                            ПОСТУПАЮЩИМ
+                            </div>
+                        <div className="dropdown-content">
+                            <a href="#">Как поступить</a>
+                            <a href="#">Академический календарь</a>
+                        </div>
                     </div>
                     <div className="header-button">
                     КОНТАКТЫ

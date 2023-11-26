@@ -5,6 +5,7 @@ import Header from "../components/Header/Header"
 import Computer from "../components/Computer.jsx"
 import Econom from "../components/Econom.jsx"
 import Marketing from "../components/Marketing.jsx"
+import Design from "../components/Design.jsx"
 import Povtas from "../components/Povtas"
 import Welcome from "../components/Welcome.jsx"
 import Carousel from "../components/carousel.jsx"
@@ -74,6 +75,16 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Authorization />
+      </div>
+    )
+  },
+  {
+    path: `/design`,
+    element: (
+      <div>
+        <Header />
+        <Design />
+        <Footer/>
       </div>
     )
   },
