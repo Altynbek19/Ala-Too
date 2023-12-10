@@ -10,6 +10,12 @@ import Povtas from "../components/Povtas"
 import Welcome from "../components/Welcome.jsx"
 import Carousel from "../components/carousel.jsx"
 import Authorization from "../components/Authorization.jsx"
+import Mission from "../components/Mission.jsx";
+import Stud_sovet from "../components/Stud_sovet.jsx";
+import V_fund from "../components/V_fund.jsx";
+import Dance_club from "../components/dance_club.jsx";
+import Music_club from "../components/Music_club.jsx";
+import Sport_club from "../components/Sport_club.jsx";
 const path = (import.meta.env.PROD)? '/project' : ''
   
 const router = createBrowserRouter([
@@ -84,6 +90,66 @@ const router = createBrowserRouter([
       <div>
         <Header />
         <Design />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/mission`,
+    element: (
+      <div>
+        <Header />
+        <Mission />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/stud_sovet`,
+    element: (
+      <div>
+        <Header />
+        <Stud_sovet />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/v_fund`,
+    element: (
+      <div>
+        <Header />
+        <V_fund />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/dance_club`,
+    element: (
+      <div>
+        <Header />
+        <Dance_club />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/music_club`,
+    element: (
+      <div>
+        <Header />
+        <Music_club />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/sport_club`,
+    element: (
+      <div>
+        <Header />
+        <Sport_club />
         <Footer/>
       </div>
     )

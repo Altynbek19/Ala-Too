@@ -21,21 +21,19 @@ export default function Header() {
                             </div>
                         <div className="dropdown-content">
                             <a href="#">О колледже</a>
-                            <a href="#">Миссия</a>
+                            <Link to='/mission'>Миссия</Link>
                             <a href="#">Проверка диплома</a>
                         </div>
                     </div>
                     <div className="header-button-container">
-                        <Link to="/computer">
                             <div className="header-button">
                                 ПРОФЕССИИ
                             </div>
-                        </Link>
                         <div className="dropdown-content">
-                            <Link to='/povtas'>Компьютерные системы и комплексы</Link>
+                            <Link to="/computer">Компьютерные системы и комплексы</Link>
                             <Link to='/econom'>Экономика и бухгалтерский отчет</Link>
                             <Link to='/marketing'>Маркетинг</Link>
-                            <Link to="/computer">Программное обеспечение вычислительной техники</Link>
+                            <Link to='/povtas'>Программное обеспечение вычислительной техники</Link>
                             <Link to='/design'>Дизайн</Link>
                         </div>
                     </div>
@@ -55,11 +53,11 @@ export default function Header() {
                             СТУДЕНЧЕСКИЕ КЛУБЫ
                             </div>
                         <div className="dropdown-content">
-                            <a href="#">Студенческий совет</a>
-                            <a href="#">V-Fund</a>
-                            <a href="#">Alatoo - dance</a>
-                            <a href="#">Music club</a>
-                            <a href="#">Спортивный клуб</a>
+                            <Link to='/stud_sovet'>Студенческий совет</Link>
+                            <Link to='/v_fund'>V-Fund</Link>
+                            <Link to='/dance_club'>Alatoo - dance</Link>
+                            <Link to='/music_club'>Music club</Link>
+                            <Link to='/sport_club'>Спортивный клуб</Link>
                         </div>
                     </div>
                     <div className="header-button-container">

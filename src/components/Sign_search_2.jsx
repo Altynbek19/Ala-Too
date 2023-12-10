@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom'
 
 function Sign_search() {
     return (
-        <Link to='/authorization'>
         <div className="h_sign_2">
             <div className="search_2">
                 <input type="text" value='Поиск...'/>
                 <img src={search_2} alt="" />
             </div>
+        <Link to='/authorization'>
             <div className="sign_button_2">ВОЙТИ</div>
-        </div>
         </Link>
+        </div>
     )
 }
 

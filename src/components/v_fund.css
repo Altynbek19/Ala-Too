@@ -1,0 +1,24 @@
+.v_fund_title{
+    font-size: 32px;
+    color: #8B83F2;
+    padding-bottom: 50px;
+}
+.v_fund_box{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background: url(../assets/computer_back.png) no-repeat;
+    background-size: cover;
+}
+.v_fund_info{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.v_fund_logo{
+    display: flex;
+    align-items: center;
+}
