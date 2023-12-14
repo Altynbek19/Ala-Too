@@ -22,3 +22,117 @@
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 1300px) {
+    .v_fund_title{
+        font-size: 32px;
+        color: #8B83F2;
+        padding-bottom: 50px;
+    }
+    .v_fund_logo img{
+        width: 200px;
+        height: 200px;
+    }
+    .v_fund_text{
+        font-size: 14px;
+    }
+    .v_fund_box{
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .v_fund_title{
+        font-size: 30px;
+        color: #8B83F2;
+        padding-bottom: 50px;
+    }
+    .v_fund_logo img{
+        width: 200px;
+        height: 200px;
+    }
+    .v_fund_text{
+        font-size: 12px;
+    }
+    .v_fund_box{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .v_fund_title{
+        font-size: 25px;
+        color: #8B83F2;
+        padding-bottom: 50px;
+    }
+    .v_fund_logo img{
+        width: 150px;
+        height: 150px;
+    }
+    .v_fund_text{
+        font-size: 10px;
+    }
+    .v_fund_box{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .v_fund_title{
+        font-size: 22px;
+        color: #8B83F2;
+        padding-bottom: 30px;
+    }
+    .v_fund_logo img{
+        width: 110px;
+        height: 110px;
+    }
+    .v_fund_text{
+        font-size: 9px;
+    }
+    .v_fund_box{
+        justify-content: space-between;
+    }
+    .v_fund_box{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .v_fund_title{
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+        color: #8B83F2;
+        padding-bottom: 30px;
+    }
+    .v_fund_logo img{
+        width: 200px;
+        height: 200px;
+    }
+    .v_fund_info{
+        width: 100%;
+    }
+    .v_fund_text{
+        font-size: 15px;
+    }
+    .v_fund_box{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+    .v_fund_box{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}

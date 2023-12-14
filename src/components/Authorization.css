@@ -1,27 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url(../assets/auth_back.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 707px;
+    padding-left: 100px;
+}
 .cc{
     display: flex;
-    /* justify-content: space-between; */
-    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    width: 50%;
+    height: 80%;
+    padding-bottom: 80px;
 }
-.reg_box{
-    padding: 100 100;
+.auth_logo{
+    padding-top: 50px;
+}
+.auth_box{
+    padding: 250px;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.auth_title{
+    font-size: 35px;
+    margin-bottom: 70px;
 }
 .img_box img{
-    width: 600px;
+    width: 700px;
 }
 .cc h2{
     color: black;
 }
 .auth_reg{
     display: flex;
+    justify-content: center;
     gap: 26px;
-    padding-bottom: 20px ;
 }
-.h2_reg{
-    border-bottom: 2px solid #3e8e41;
-}
-.error{
-    color: red;
+.h2_auth{
+    border-bottom: 2px solid rgba(154, 255, 74, 1);
 }
 .exit{
     display: flex;
@@ -32,6 +52,9 @@
 .remember_text{
     margin: 0px;
 }
+.error{
+    color: red;
+}
 
 .Sign_in{
     color: white;
@@ -40,12 +63,15 @@ input{
     background: none;
     width: 360px;
     height: 38px;
-    border: 1px solid black;
+    border: 3px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-radius: 3px;
     padding-left: 10px;
 }
 .cc .Sign_in input{
-    background-color: #4d4d4d;
+    background-color: #9E89EF;
     width: 360px;
     min-height: 38px;
     border-radius: 3px;
@@ -53,6 +79,7 @@ input{
     color: white;
     margin-bottom: 25px;
     margin-top: 25px;
+    border: none;
     cursor: pointer;
 }
 
@@ -60,18 +87,25 @@ input{
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 20 0;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding: 0px;
 }
 a{
     text-decoration: none;
 }
-
-.reg_box .forget{
+.forget_pass{
+    display: flex;
+    justify-content: center;
+    width: 360px;
+}
+.auth_box .forget{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 360px;
-    padding-bottom: 10px;
+    border-bottom: 1px solid black ;
+    padding-bottom: 50px;
 }
 .forget a{
     color: black;
@@ -79,13 +113,15 @@ a{
 
 .remember{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 3px;
 }
 .remember input{
     padding: 0px;
     border-radius: 3px;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background-color: black;
 }
 
@@ -110,11 +146,12 @@ a{
 .register{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 360px;
 }
 .reg{
     background: none;
-    border: 1px solid white;
+    border: 3px solid black;
     box-sizing: border-box;
     width: 360px;
     height: 38px;
@@ -124,277 +161,10 @@ a{
 .reg:hover{
     background-color: rgba(255, 255, 255, 0.259);
 }
-
-@media screen and (max-width: 1530px) {
-    .img_box img{
-        width: 700px;
-    }
-    .auth_box, .reg_box{
-        padding-top: 50px;
-    }
+.password{
+    margin-bottom: 0px;
 }
-@media screen and (max-width: 1380px) {
-    .img_box img{
-        width: 700px;
-    }
-    .auth_box{
-        padding-top: 50px;
-    }
-    input{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: none;
-        width: 260px;
-        height: 25px;
-        border: 1px solid black;
-        border-radius: 3px;
-        padding-left: 10px;
-    }
-    .cc .Sign_in input{
-        width: 260px;
-        align-items: center;
-    }
-    .cc .Sign_in{
-        width: 260px;
-    }
-    .auth_box{
-        width: 260px;
-    }
-    .auth_box .forget{
-        width: 260px;
-    }
-    .contact_auth{
-        width: 260px;
-        margin-top: 25px;
-        margin-bottom: 20px;
-    }
-    .auth_reg h2{
-        font-size: 20px;
-
-    }
-    .reg_box h4{
-        margin: 0px;
-        margin-bottom: 5px;
-        margin-top: 10px;
-    }
-    .remember{
-        height: 50px;
-        margin-top: -10px;
-    }
-}
-@media screen and (max-width: 1260px) {
-    .img_box img{
-        width: 600px;
-    }
-    .auth_box, .reg_box{
-        padding-top: 50px;
-    }
-    input{
-        background: none;
-        width: 360px;
-        height: 38px;
-        border: 1px solid black;
-        border-radius: 3px;
-        padding-left: 10px;
-    }
-    .cc .Sign_in input{
-        width: 260px;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .cc .Sign_in{
-        width: 260px;
-    }
-    .auth_box{
-        width: 260px;
-    }
-    .auth_box .forget{
-        width: 260px;
-        padding-bottom: 20px;
-    }
-    .contact_auth{
-        width: 260px;
-        margin-top: 25px;
-        margin-bottom: 20px;
-    }
-    .auth_reg h2{
-        font-size: 20px;
-
-    }
-}
-@media screen and (max-width: 1160px) {
-    .img_box img{
-        width: 500px;
-    }
-    .auth_box, .reg_box{
-        padding-top: 50px;
-        padding-right: 40px;
-    }
-    input{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: none;
-        width: 260px;
-        height: 25px;
-        border: 1px solid black;
-        border-radius: 3px;
-        padding-left: 10px;
-    }
-    .cc .Sign_in input{
-        width: 260px;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .cc .Sign_in{
-        width: 260px;
-    }
-    .auth_box{
-        width: 260px;
-    }
-    .auth_box .forget{
-        width: 260px;
-        padding-bottom: 20px;
-    }
-    .contact_auth{
-        width: 260px;
-        margin-top: 25px;
-        margin-bottom: 20px;
-    }
-    .auth_reg h2{
-        font-size: 20px;
-
-    }
-}
-@media screen and (max-width: 850px) {
-    .cc{
-        display: flex;
-        width: 100%;
-        height: 700px;
-        align-items: center;
-        justify-content: center;
-    }
-    .img_box img{
-        width: 400px;
-        display: none;
-    }
-    .auth_box, .reg_box{
-        width: 360px;
-        padding: 0px;
-        margin: 0px;
-    }
-    input{
-        background: none;
-        width: 345px;
-        height: 38px;
-        border: 1px solid black;
-        border-radius: 3px;
-        padding-left: 10px;
-    }
-    .cc .Sign_in input{
-        background-color: black;
-        width: 360px;
-        min-height: 38px;
-        border-radius: 3px;
-        margin-bottom: 10px;
-        color: white;
-        margin-bottom: 25px;
-        margin-top: 25px;
-        cursor: pointer;
-    }
-    .cc .Sign_in input{
-        background-color: black;
-        width: 560px;
-        min-height: 38px;
-        border-radius: 3px;
-        margin-bottom: 10px;
-        color: red;
-        margin-bottom: 25px;
-        margin-top: 25px;
-        cursor: pointer;
-    }
-    .auth_box .forget{
-        width: 360px;
-        padding-bottom: 20px;
-    }
-    .contact_auth{
-        width: 360px;
-        margin-top: 25px;
-        margin-bottom: 20px;
-    }
-    .auth_reg h2{
-        font-size: 40px;
-
-    }
-}
-@media screen and (max-width: 425px) {
-    .cc{
-        display: flex;
-        width: 100%;
-        height: 700px;
-        align-items: center;
-        justify-content: center;
-    }
-    .e-mail input, .password input{
-        width: 60%;
-        padding: 50 0;
-    }
-    .e-mail input::placeholder, .password input::placeholder{
-        font-size: 40px;
-    }
-    .img_box img{
-        width: 400px;
-        display: none;
-    }
-    .auth_box, .reg_box{
-        width: 100%;
-    }
-    input{
-        background: none;
-        width: 200px;
-        height: 30px;
-        border: 1px solid black;
-        border-radius: 3px;
-        padding-left: 10px;
-    }
-    .remember, .forget{
-        width: 600px;
-        margin: 0 auto;
-        text-align: left;
-        font-size: 50px;
-    }
-    .cc .Sign_in input{
-        background-color: red;
-        width: 50%;
-        min-height: 30px;
-        border-radius: 3px;
-        margin-bottom: 10px;
-        color: white;
-        margin-bottom: 25px;
-        margin-top: 25px;
-        cursor: pointer;
-    }
-    .auth_box .forget{
-        width: 220px;
-        padding-bottom: 20px;display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .contact_auth{
-        width: 220px;
-        margin-top: 25px;
-        margin-bottom: 20px;
-    }
-    .social_net{
-        width: 220px;
-    }
-    .auth_reg h2{
-        font-size: 65px;
-
-    }
-    h5{
-        margin: 0 auto;
-    }
+.auth_message{
+    padding-bottom: 50px;
+    margin-top: -30px;
 }

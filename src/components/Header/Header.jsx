@@ -42,10 +42,10 @@ export default function Header() {
                             СТУДЕНТ
                             </div>
                         <div className="dropdown-content">
-                            <a href="#">Формы</a>
-                            <a href="#">Мидтерм экзамены</a>
-                            <a href="#">Финальные экзамены</a>
-                            <a href="#">Пересдача</a>
+                            <Link to='/form'>Формы</Link>
+                            <Link to='/midterm'>Мидтерм экзамены</Link>
+                            <Link to='/final'>Финальные экзамены</Link>
+                            <Link to='/make_up'>Пересдача</Link>
                         </div>
                     </div>
                     <div className="header-button-container">

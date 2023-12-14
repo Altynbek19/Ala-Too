@@ -1,4 +1,4 @@
-import {createBrowserRouter} from "react-router-dom";
+import {Form, createBrowserRouter} from "react-router-dom";
 import App from "../App.jsx";
 import Footer from "../components/Footer"
 import Header from "../components/Header/Header"
@@ -16,6 +16,12 @@ import V_fund from "../components/V_fund.jsx";
 import Dance_club from "../components/dance_club.jsx";
 import Music_club from "../components/Music_club.jsx";
 import Sport_club from "../components/Sport_club.jsx";
+import Forms from "../components/Form.jsx";
+import Midterm_exam from "../components/Midterm_exam.jsx";
+import Final_exam from "../components/Final_exam.jsx";
+import Make_up from "../components/Make_up.jsx";
+import Password_update from "../components/Password_update.jsx";
+import Forget_password from "../components/Forget_password.jsx";
 const path = (import.meta.env.PROD)? '/project' : ''
   
 const router = createBrowserRouter([
@@ -85,6 +91,22 @@ const router = createBrowserRouter([
     )
   },
   {
+    path: `/forget_pass`,
+    element: (
+      <div>
+        <Forget_password />
+      </div>
+    )
+  },
+  {
+    path: `/pass_update`,
+    element: (
+      <div>
+        <Password_update />
+      </div>
+    )
+  },
+  {
     path: `/design`,
     element: (
       <div>
@@ -150,6 +172,46 @@ const router = createBrowserRouter([
       <div>
         <Header />
         <Sport_club />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/form`,
+    element: (
+      <div>
+        <Header />
+        <Forms />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/midterm`,
+    element: (
+      <div>
+        <Header />
+        <Midterm_exam />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/final`,
+    element: (
+      <div>
+        <Header />
+        <Final_exam />
+        <Footer/>
+      </div>
+    )
+  },
+  {
+    path: `/make_up`,
+    element: (
+      <div>
+        <Header />
+        <Make_up />
         <Footer/>
       </div>
     )
